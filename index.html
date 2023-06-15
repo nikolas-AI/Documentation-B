@@ -58,14 +58,49 @@
             <header>Designing Responsive Layouts</header>
             <p>Creating responsive layouts involves designing flexible and adaptable structures for web content. This can be achieved through the use of fluid grids, which utilize relative units like percentages for widths, allowing elements to resize proportionally.</p>
             <p>CSS frameworks like Bootstrap or Foundation provide grid systems that simplify the process of building responsive layouts. Additionally, CSS flexbox and grid systems offer more advanced options for creating responsive designs with precise control over the placement and behavior of elements.</p>
-            <code></code>
+            <code>.container {
+                width: 100%;
+                max-width: 1200px;
+                margin: 0 auto;
+              }
+              
+              .column {
+                width: 100%;
+                padding: 0 10px;
+                box-sizing: border-box;
+              }
+              
+              @media screen and (min-width: 768px) {
+                .column {
+                  width: 50%;
+                }
+              }
+              </code>
         </section>
         
         <section class="main-section" id="Adapting_Typography">
             <header>Adapting Typography</header>
             <p>Typography plays a significant role in the overall look and feel of a website. To ensure optimal readability and visual consistency across devices, typography should be carefully adapted for responsive design. </p>
             <p>Techniques such as fluid typography, where font sizes are defined in relative units, allow text to scale smoothly with the viewport size. Adjusting line heights, letter spacing, and font stacks can further enhance the legibility and aesthetics of the typography in different viewing contexts.</p>
-            <code></code>
+            <code>body {
+                font-size: 16px;
+                line-height: 1.5;
+              }
+              
+              h1 {
+                font-size: 2rem;
+              }
+              
+              @media screen and (min-width: 768px) {
+                body {
+                  font-size: 18px;
+                }
+              
+                h1 {
+                  font-size: 3rem;
+                }
+              }
+              </code>
         </section>
         
         <section class="main-section" id="Optimizing_Images_and_Media">
@@ -97,7 +132,6 @@
                     </ul>
                 </li>
             </ol>
-            <code></code>
         </section>
 
     </div>
