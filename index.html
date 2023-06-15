@@ -21,29 +21,43 @@
         </nav>
         <section class="main-section" id="Introduction">
             <header>Introduction</header>
-            <p></p>
-            <p></p>
-            <p></p>
+            <p>Responsive web design is an approach that aims to create websites that adapt and provide an optimal viewing experience across different devices and screen sizes.</p>
+            <p> It involves using CSS media queries to apply specific styles based on the characteristics of the user's device, such as width, height, or orientation. </p>
+            <p> By implementing responsive design techniques, developers can ensure their websites are accessible and visually appealing on desktops, laptops, tablets, and mobile devices.</p>
         </section>
 
         <section class="main-section" id="Understanding_CSS_Media_Queries">
             <header>Understanding CSS Media Queries</header>
-            <p></p>
-            <p></p>
-            <code></code>
+            <p>CSS media queries enable developers to define different styles for specific conditions. </p>
+            <p>Media queries consist of a media type, such as screen or print, and one or more media features. Media features include properties like width, height, device-width, orientation, and more. By combining media types and features, developers can target specific devices or screen characteristics and apply appropriate styles accordingly.</p>
+            <code>@media screen and (max-width: 768px) {
+                /* Styles applied for screens with a maximum width of 768 pixels */
+              }
+              </code>
         </section>
 
         <section class="main-section" id="Media_Query_Syntax_and_Rules">
             <header>Media Query Syntax and Rules</header>
-            <p></p>
-            <p></p>
-            <code></code>
+            <code>/* Styles applied to screens with a maximum width of 768 pixels */
+                @media screen and (max-width: 768px) {
+                  /* Add your CSS styles here */
+                  body {
+                    font-size: 14px;
+                    background-color: lightblue;
+                  }
+                  
+                  .container {
+                      width: 90%;
+                    }
+                }</code>
+                <p>In the example, the styles for the body element and .container class are customized for different screen sizes. </p>
+                <p>When the screen width is 768 pixels or less, the font size is set to 14 pixels, and the background color is light blue. The width of the .container class is set to 90% of the parent container. </p>
         </section>
         
         <section class="main-section" id="Designing_Responsive_Layouts">
             <header>Designing Responsive Layouts</header>
-            <p></p>
-            <p></p>
+            <p>Creating responsive layouts involves designing flexible and adaptable structures for web content. This can be achieved through the use of fluid grids, which utilize relative units like percentages for widths, allowing elements to resize proportionally.</p>
+            <p>CSS frameworks like Bootstrap or Foundation provide grid systems that simplify the process of building responsive layouts. Additionally, CSS flexbox and grid systems offer more advanced options for creating responsive designs with precise control over the placement and behavior of elements.</p>
             <code></code>
         </section>
         
