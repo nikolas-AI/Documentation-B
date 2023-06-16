@@ -29,8 +29,8 @@ html, *{
     display: flex;
     flex-direction: column;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    height: 170px;
-    width: 50%;
+    height: 180px;
+    width: 70%;
     justify-content: center;
     align-items: center;
     row-gap: 8px;
@@ -63,16 +63,9 @@ html, *{
     background-color: #e4e0e0;
     border-radius: 20px;
     font-size: 15px; 
-    padding-left: 5%;
+    margin-left: 60px;
 }
 
-code {
-    display: block;
-    width: 90%;
-    height: auto;
-    word-wrap: break-word ;
-
-}
 
 ol > li {
     font-size: 15px;
@@ -95,6 +88,25 @@ hr {
 @media (min-width: 800px) {
     .links {
         width: 600px;
-        height: 200px;
+        height: 300px;
+        padding-bottom: 20px;
     }
 }
+
+@media (max-width: 650px) {
+    .links {
+        height: 180px;
+        width: 90%;
+    }
+    #navbar {
+       height: 310px;
+    }
+}
+
+@media (max-width: 850px) {
+    .code {
+        width: 750px;
+        margin-left: 0;
+    }
+}
+
