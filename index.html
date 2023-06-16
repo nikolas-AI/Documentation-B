@@ -20,6 +20,7 @@
             </div>
         </nav>
         <section class="main-section" id="Introduction">
+          <hr>
             <header>Introduction</header>
             <p>Responsive web design is an approach that aims to create websites that adapt and provide an optimal viewing experience across different devices and screen sizes.</p>
             <p> It involves using CSS media queries to apply specific styles based on the characteristics of the user's device, such as width, height, or orientation. </p>
@@ -30,28 +31,37 @@
             <header>Understanding CSS Media Queries</header>
             <p>CSS media queries enable developers to define different styles for specific conditions. </p>
             <p>Media queries consist of a media type, such as screen or print, and one or more media features. Media features include properties like width, height, device-width, orientation, and more. By combining media types and features, developers can target specific devices or screen characteristics and apply appropriate styles accordingly.</p>
-            <code>@media screen and (max-width: 768px) {
-                /* Styles applied for screens with a maximum width of 768 pixels */
-              }
-            </code>
+            <div class="code">
+              <pre>
+                <code>
+                  @media screen and (max-width: 768px) { 
+                    /* Styles applied for screens with a maximum width of 768 pixels */ 
+                  }
+                </code>
+              </pre>
+            </div>
         </section>
         <hr>
         <section class="main-section" id="Media_Query_Syntax_and_Rules">
             <header>Media Query Syntax and Rules</header>
-            <code>
-              /* Styles applied to screens with a maximum width of 768 pixels */
-                @media screen and (max-width: 768px) {
-                  /* Add your CSS styles here */
-                  body {
-                    font-size: 14px;
-                    background-color: lightblue;
-                  }
-                  
-                  .container {
-                      width: 90%;
+            <div class="code">
+              <pre>
+                <code>
+                  /* Styles applied to screens with a maximum width of 768 pixels */
+                    @media screen and (max-width: 768px) {
+                      /* Add your CSS styles here */
+                      body {
+                        font-size: 14px;
+                        background-color: lightblue;
+                      }
+              
+                      .container {
+                          width: 90%;
+                        }
                     }
-                }
-              </code>
+                  </code>
+              </pre>
+            </div>
                 <p>In the example, the styles for the body element and .container class are customized for different screen sizes. </p>
                 <p>When the screen width is 768 pixels or less, the font size is set to 14 pixels, and the background color is light blue. The width of the .container class is set to 90% of the parent container. </p>
         </section>
@@ -60,51 +70,61 @@
             <header>Designing Responsive Layouts</header>
             <p>Creating responsive layouts involves designing flexible and adaptable structures for web content. This can be achieved through the use of fluid grids, which utilize relative units like percentages for widths, allowing elements to resize proportionally.</p>
             <p>CSS frameworks like Bootstrap or Foundation provide grid systems that simplify the process of building responsive layouts. Additionally, CSS flexbox and grid systems offer more advanced options for creating responsive designs with precise control over the placement and behavior of elements.</p>
-            <code>.container {
-                width: 100%;
-                max-width: 1200px;
-                margin: 0 auto;
-              }
+            <div class="code">
+              <pre>
+                <code>
+                  .container {
+                    width: 100%;
+                    max-width: 1200px;
+                    margin: 0 auto;
+                  }
               
-              .column {
-                width: 100%;
-                padding: 0 10px;
-                box-sizing: border-box;
-              }
+                  .column {
+                    width: 100%;
+                    padding: 0 10px;
+                    box-sizing: border-box;
+                  }
               
-              @media screen and (min-width: 768px) {
-                .column {
-                  width: 50%;
-                }
-              }
-              </code>
+                  @media screen and (min-width: 768px) {
+                    .column {
+                      width: 50%;
+                    }
+                  }
+                  </code>
+              </pre>
+            </div>
         </section>
         <hr>
         <section class="main-section" id="Adapting_Typography">
             <header>Adapting Typography</header>
             <p>Typography plays a significant role in the overall look and feel of a website. To ensure optimal readability and visual consistency across devices, typography should be carefully adapted for responsive design. </p>
             <p>Techniques such as fluid typography, where font sizes are defined in relative units, allow text to scale smoothly with the viewport size. Adjusting line heights, letter spacing, and font stacks can further enhance the legibility and aesthetics of the typography in different viewing contexts.</p>
-            <code>body {
-                font-size: 16px;
-                line-height: 1.5;
-              }
+            <div class="code">
+              <pre>
+                <code>
+                  body {
+                    font-size: 16px;
+                    line-height: 1.5;
+                  }
               
-              h1 {
-                font-size: 2rem;
-              }
-            </code>
-            
-            <code>
-              @media screen and (min-width: 768px) {
-                body {
-                  font-size: 18px;
-                }
+                  h1 {
+                    font-size: 2rem;
+                  }
+                </code>
               
-                h1 {
-                  font-size: 3rem;
-                }
-              }
-              </code>
+                <code>
+                  @media screen and (min-width: 768px) {
+                    body {
+                      font-size: 18px;
+                    }
+              
+                    h1 {
+                      font-size: 3rem;
+                    }
+                  }
+                  </code>
+              </pre>
+            </div>
         </section>
         <hr>
         <section class="main-section" id="Optimizing_Images_and_Media">

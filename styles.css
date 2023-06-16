@@ -1,11 +1,10 @@
-html {
+html, *{
     box-sizing: border-box;
 }
 
 #main-doc {
     padding: 10px;
     color: #4d4e53;
-    
 }
 
 #navbar {
@@ -35,11 +34,15 @@ html {
     justify-content: center;
     align-items: center;
     row-gap: 8px;
-    background-color: #e3dcdc;
+    background-color: #e4e0e0;
     border-radius: 80px;
+    box-shadow: 4px 4px 4px 4px;
 }
 
-
+.nav-link {
+    text-decoration: none;
+    color: blueviolet;
+}
 
 .main-section {
     font-family: sans-serif;
@@ -49,17 +52,26 @@ html {
 .main-section header {
     font-size: 22px;
     color: black;
-
+    
 }
 
-.main-section p, .main-section code {
+.main-section p {
     padding-left: 60px;
+}
+ 
+.code {
+    background-color: #e4e0e0;
+    border-radius: 20px;
+    font-size: 15px; 
+    padding-left: 5%;
 }
 
 code {
-    background-color: #baaaaa;
-    width: 400px;
-    height: 400px;
+    display: block;
+    width: 90%;
+    height: auto;
+    word-wrap: break-word ;
+
 }
 
 ol > li {
@@ -78,4 +90,11 @@ hr {
     border: 0;
     border-radius: 30px;
     background-color: rgb(97, 96, 96);
+}
+
+@media (min-width: 800px) {
+    .links {
+        width: 600px;
+        height: 200px;
+    }
 }
