@@ -68,6 +68,11 @@ html, *{
     margin-left: 60px;
 }
 
+code {
+    display: block;
+    background-color: red;
+}
+
 
 ol > li {
     font-size: 15px;
